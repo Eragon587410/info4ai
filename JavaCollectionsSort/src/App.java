@@ -19,11 +19,11 @@ public class App {
         // ordinamento per studentname
 
 
-        Collections.sort(students);
+        Collections.sort(students); //usa il compare to tra oggetti
         
 
-
-
+        Collections.sort(students, (s1,s2) -> s1.getStudentname().compareTo(s2.getStudentname()));
+        Collections.sort(students, (s1,s2) -> s1.getStudentage()-s2.getStudentage());
 
         for (Student student : students) {
             System.out.println(student);
