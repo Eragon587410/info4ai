@@ -15,5 +15,10 @@ public class Test {
         System.out.println(test2.equals(test4));
 
 
+        Villa test5 = new Villa(12, 200, "viale", "ronco", 3, 200, true);
+        test5.save("save.bin");
+        test5.save("save.dat");
+        Villa test6 = (Villa) Abitazione.load("save.bin");
+        System.out.println(test6);
     }
 }
