@@ -26,5 +26,14 @@ public class Pila {
         return out;
     }
 
+    public Tipo top(){
+        Tipo out = null;
+        if (head != null){
+            out = head.getInfo();
+        }
+
+        return out;
+    }
+
 
 }
